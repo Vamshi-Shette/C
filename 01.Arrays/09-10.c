@@ -1,5 +1,15 @@
 #include<stdio.h>
 #include<string.h>
+
+/*
+Question: Insert element at position
+Question description: Write a C program to insert a number at a given position in an array.
+Sample data:
+Array: 10 20 30 40
+Insert: 25 at position 2
+Expected output:
+Array after insertion: 10 20 25 30 40
+*/
 void insert(int *arr,int *num)
 {
         int value,index;
@@ -13,6 +23,15 @@ void insert(int *arr,int *num)
         return;
 }
 
+/*
+Question: Delete element at position
+Question description: Write a C program to delete a number at a given position in an array.
+Sample data:
+Array: 10 20 30 40
+Delete at position: 2
+Expected output:
+Array after deletion: 10 20 40
+*/
 void delete(int *arr,int *num)
 {
         int position;
@@ -34,6 +53,6 @@ int main()
         delete(arr,&num);
         for(int i=0;i<num;i++)
                 printf("%d ",arr[i]);
-//      printf("%d",sizeof(int)*((4)-2));
         return 0;
 }
+
